@@ -1,0 +1,11 @@
+run static build on port 5000
+serve -s build
+
+convert images to webp
+node webp.js
+
+optimize svgs
+$ svgo -f ../src/assets/svgs -o ../src/assets/svgo
+
+add crit css to html and group media query in App.scss
+gulp

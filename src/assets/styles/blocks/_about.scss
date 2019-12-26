@@ -1,0 +1,262 @@
+.about-bar {
+  @include fluid-val(width, 92px, 170px);
+}
+
+.about-services {
+  margin: auto;
+  @include fluid-val( (margin-top, margin-bottom), -10px, -30px, 320px, 1000px);
+  @include fluid-val(padding-top, 50px, 120px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1450px;
+}
+
+.services-card {
+  @include fluid-val((padding-right, padding-left), 5px, 30px, 320px, 1000px);
+  @include fluid-val((padding-top, padding-bottom), 10px, 30px, 320px, 1000px);
+  flex: 0 1 calc(50%);
+}
+
+.servicesCard-icon {
+  @include fluid-val(margin-bottom, 10px, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.servicesCard-text {
+  margin: auto;
+}
+
+.svg-simple,
+.svg-responsive,
+.svg-performance,
+.svg-accessible {
+  @include fluid-val(height, 65px, 90px);
+}
+
+.svg-responsive {
+  position: relative;
+  @include fluid-val(top, 4px, 10px);
+}
+
+.servicesCard-title {
+  @include fluid-type(2.1rem, 4rem);
+  @include fluid-val(margin-bottom, 10px, 25px);
+  text-align: center;
+}
+
+.servicesCard-text {
+  @include fluid-type(1.3rem, 1.9rem);
+  text-align: center;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.aboutMe-image {
+  margin: auto;
+  @include fluid-val(margin-top, 50px, 120px);
+  @include fluid-val(margin-bottom, 10px, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aboutMe-title {
+  @include fluid-type(2.1rem, 4rem);
+  @include fluid-val(margin-bottom, 10px, 25px);
+}
+
+.aboutMe-text {
+  @include fluid-type(1.6rem, 2.8rem);
+  margin: auto;
+  max-width: 1350px;
+}
+
+.about-skills {
+  margin: auto;
+  @include fluid-val(padding-top, 50px, 120px);
+  @include fluid-val( (margin-top, margin-bottom), -10px, -30px, 320px, 1000px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1350px;
+}
+
+.skills-card {
+  @include fluid-val((padding-top, padding-bottom), 10px, 30px, 320px, 1000px);
+  flex: 0 1 calc(30% - 1rem);
+  margin-bottom: -5px;
+}
+
+.skillsCard-icon {
+  @include fluid-val(height, 60px, 75px);
+  @include fluid-val(margin-bottom, 10px, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsCard-title {
+  @include fluid-type(1.4rem, 2.8rem);
+  @include fluid-val(margin-bottom, 10px, 25px);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.icon-frontend svg,
+.icon-backend svg,
+.icon-workflow svg,
+.icon-database svg {
+  @include fluid-val(height, 60px, 75px);
+}
+
+.icon-testing svg,
+.icon-design svg {
+  @include fluid-val(height, 50px, 65px);
+}
+
+.skillsCard-tools {
+  @include fluid-type(1rem, 2.2rem);
+  @include fluid-val(max-width, 100px, 170px);
+  margin: auto;
+  margin-top: -5px;
+}
+
+.tools-all {
+  display: flex;
+  padding: 5px;
+  padding-left: 10px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    @include fluid-val(margin-right, 5px, 10px);
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+
+.tools-html::before {
+  background-image: url("../../svgo/html.svg");
+}
+
+.tools-css::before {
+  background-image: url("../../svgo/css.svg");
+}
+
+.tools-css::before, .tools-html::before {
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 14.86px, 28.41px);
+}
+
+.tools-sass::before {
+  background-image: url("../../svgo/sass.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 9.74px, 18.74px);
+}
+
+.tools-javascript::before {
+  background-image: url("../../svgo/javascript.svg");
+}
+
+.tools-javascript::before, .tools-express::before, .tools-github::before, .tools-gulp::before, .tools-mongodb::before, .tools-mysql::before, .tools-adobexd::before, .tools-illustrator::before, .tools-photoshop::before {
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 13px, 25px);
+}
+
+.tools-react::before {
+  background-image: url("../../svgo/react.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 11.57px, 22.24px);
+}
+
+.tools-d3::before {
+  background-image: url("../../svgo/d3.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 12.31px, 23.68px);
+}
+
+.tools-nodejs::before {
+  background-image: url("../../svgo/nodejs.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 14.326px, 27.55px);
+}
+
+.tools-express::before {
+  background-image: url("../../svgo/express.svg");
+}
+
+.tools-restapi::before {
+  background-image: url("../../svgo/restapi.svg");
+  @include fluid-val(width, 12px, 24.47px);
+  @include fluid-val(height, 10.5px, 21.74px);
+}
+
+.tools-github::before {
+  background-image: url("../../svgo/github.svg");
+}
+
+.tools-webpack::before {
+  background-image: url("../../svgo/webpack.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 14.366px, 27.63px);
+}
+
+.tools-gulp::before {
+  background-image: url("../../svgo/gulp.svg");
+}
+
+.tools-mongodb::before {
+  background-image: url("../../svgo/mongodb.svg");
+}
+
+.tools-mysql::before {
+  background-image: url("../../svgo/mysql.svg");
+}
+
+.tools-mocha::before {
+  background-image: url("../../svgo/mocha.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 14.768px, 28.4px);
+}
+
+.tools-chai::before {
+  background-image: url("../../svgo/chai.svg");
+  @include fluid-val(width, 13px, 25px);
+  @include fluid-val(height, 14.77px, 28.91);
+}
+
+.tools-adobexd::before {
+  background-image: url("../../svgo/adobexd.svg");
+}
+
+.tools-illustrator::before {
+  background-image: url("../../svgo/illustrator.svg");
+}
+
+.tools-photoshop::before {
+  background-image: url("../../svgo/photoshop.svg");
+}
+
+@media screen and (min-width: 800px) {
+  .skills-card {
+    @include fluid-val-in-media-query(max-width, 120px, 170px, 800px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .services-card {
+    @include fluid-val-in-media-query(max-width, 200px, 335px, 1000px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

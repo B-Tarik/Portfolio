@@ -1,0 +1,29 @@
+/* TEAM */
+
+                            
+Your title: Tarik Bouchekkif.
+                            
+Site: https://fullwebstack.com
+
+Contact: hey [at] fullwebstack.com
+
+Github:                             
+
+Linkedin: your Twitter username.
+
+Codepen: 
+                            
+Location: Morocco.
+                      
+
+                            
+/* SITE */
+
+                            
+Last update: 2019/11/-- 
+
+Standards: HTML5, CSS3, JAVASCRIPT.
+                            
+Components: React, AOS.
+                            
+Software: Visual Studio Code, Adobe XD, Illustrator, Photoshop.

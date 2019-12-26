@@ -1,0 +1,83 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min, $max, $min-vp: 32rem, $max-vp: 192rem) {
+  $range-val: $max - $min;
+  $fix-min-vp: ($min-vp / strip-unit($html-font-size)) * 10;
+  $fix-max-vp: ($max-vp / strip-unit($html-font-size)) * 10;
+  $range-vp: $fix-max-vp - $fix-min-vp; 
+
+  font-size: $min;
+
+  @media screen and (min-width: #{strip-unit($min-vp) * 10}px) {
+    font-size: calc(#{$min} + #{strip-unit($range-val)} * ((100vw - #{$fix-min-vp}) / #{strip-unit($range-vp)}));
+  }
+
+  @media screen and (min-width: #{strip-unit($max-vp) * 10}px) {
+    font-size: $max;
+  }
+}
+
+@mixin fluid-type-in-media-query($min, $max, $min-vp, $max-vp: 192rem) {
+  $range-val: $max - $min;
+  $fix-min-vp: ($min-vp / strip-unit($html-font-size)) * 10;
+  $fix-max-vp: ($max-vp / strip-unit($html-font-size)) * 10;
+  $range-vp: $fix-max-vp - $fix-min-vp;
+
+  font-size: calc(#{$min} + #{strip-unit($range-val)} * ((100vw - #{$fix-min-vp}) / #{strip-unit($range-vp)}));
+
+  @media screen and (min-width: #{strip-unit($max-vp) * 10}px) {
+    font-size: $max;
+  }
+}
+
+@mixin fluid-val($properties, $min, $max, $min-vp: 320px, $max-vp: 1920px) {
+  $range-val: $max - $min;
+  $range-vp: $max-vp - $min-vp;
+  
+  @each $property in $properties {
+    #{$property}: $min;
+  }
+
+  @media screen and (min-width: $min-vp) {
+    @each $property in $properties {
+      #{$property}: calc(#{$min} + #{strip-unit($range-val)} * ((100vw - #{$min-vp}) / #{strip-unit($range-vp)}));
+    }
+  }
+
+  @media screen and (min-width: $max-vp) {
+    @each $property in $properties {
+      #{$property}: $max;
+    }
+  }
+    
+}
+
+
+@mixin fluid-val-in-media-query($properties, $min, $max, $min-vp, $max-vp: 1920px) {
+  $range-val: $max - $min;
+  $range-vp: $max-vp - $min-vp;
+  
+  @each $property in $properties {
+    #{$property}: calc(#{$min} + #{strip-unit($range-val)} * ((100vw - #{$min-vp}) / #{strip-unit($range-vp)}));
+  }
+
+  @media screen and (min-width: $max-vp){
+    @each $property in $properties {
+      #{$property}: $max;
+    }
+  }
+    
+}
+
+
+@mixin lhCrop($line-height) {
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}

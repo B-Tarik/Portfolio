@@ -1,0 +1,79 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $html-font-size;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #545454;
+  width: 100%;
+  height: 100vh;
+  min-width: $mobile-min-width;
+  max-width: $desktop-max-width;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @include fluid-type(2.2rem, 4.6rem);
+  width: 12.6em;
+  font-weight: 400;
+  text-align: left;
+  margin: auto;
+  // background: -webkit-linear-gradient(-47deg, #ffffff 0%, #c2fffd 100%);
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  
+}
+
+h2 {
+  @include fluid-type(2.7rem, 5rem);
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #F2F2F2;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:focus, input[type=submit]:focus {
+  box-shadow: 0 0 0 3px #56d2f7, 0 0 0 5px #ffffff;
+  outline-style: dotted;
+  transition: box-shadow .3s !important;
+}
+
+a:active, input[type=submit]:active {
+  box-shadow: none;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px #343333, 0 0 0 5px #ffffff;
+  outline-style: dotted;
+  transition: box-shadow .3s !important;
+}
+
+i {
+  font-style: normal;
+}
+
+li {
+    list-style: none;
+}
