@@ -36,3 +36,4 @@ https://fullwebstack.com
 
 **Back-end:**
 - Hosted on Netlify
+- Google Analytics
