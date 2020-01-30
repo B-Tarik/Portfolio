@@ -103,16 +103,16 @@
 
 .home-btn--git {
   border: none;
-  background: #0066ff;
-  color: #fff;
+  background: #fff;
+  color: #0576D0;
   
   &:hover {
-    background: darken(#0066ff, 3%);
+    background: darken(#fff, 5%);
     transform: translateY(-1px);
   }
   
   &:active {
-    background: lighten(#0066ff, 3%);
+    background: lighten(#fff, 3%);
     transform: translateY(1px);
   }
 

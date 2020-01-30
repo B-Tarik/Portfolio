@@ -11,11 +11,11 @@ import Footer from "./components/footer";
 import 'aos/dist/aos.css';
 
 // development
-import './App.critcss.scss';
-import './App.scss';
+// import './App.critcss.scss';
+// import './App.scss';
 
 // production
-// import './assets/gulpCss/grpCssMedia/App.css';
+import './assets/gulpCss/grpCssMedia/App.css';
 
 function App() {
 

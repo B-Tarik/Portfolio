@@ -7,11 +7,11 @@ Site: https://fullwebstack.com
 
 Contact: hey [at] fullwebstack.com
 
-Github:                             
+Github: https://github.com/B-Tarik                 
 
-Linkedin: your Twitter username.
+Codepen: https://codepen.io/B-Tarik
 
-Codepen: 
+Linkedin: https://www.linkedin.com/in/tarik-bouchekkif
                             
 Location: Morocco.
                       
@@ -20,7 +20,7 @@ Location: Morocco.
 /* SITE */
 
                             
-Last update: 2019/11/-- 
+Last update: 2019/12/-- 
 
 Standards: HTML5, CSS3, JAVASCRIPT.
                             

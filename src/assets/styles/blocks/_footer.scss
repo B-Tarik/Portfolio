@@ -79,7 +79,7 @@
   max-width: 1000px;
 }
 
-.footer-container, .container-flex {
+.container-flex {
   @include fluid-val(width, 270px, 300px, 320px, 1000px);
 }
 

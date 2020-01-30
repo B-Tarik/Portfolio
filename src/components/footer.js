@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as Logo } from "../assets/svgo/logo.svg";
 
 function Footer() {
+  
   return (
     <footer id="footer" className="footer" role="contentinfo">
       <div className="footer-up">
@@ -75,7 +76,7 @@ function Footer() {
           <p>2019 © FULLWEBSTACK. All rights reserved.</p>
           <p>
             Made with love by Tarik Bouchekkif.{" "}
-            <a href="#" target="_blanc" rel="noopener noreferrer">
+            <a href="https://github.com/B-Tarik" target="_blanc" rel="noopener noreferrer">
               More information.
             </a>
           </p>
